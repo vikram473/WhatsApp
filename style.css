@@ -1,0 +1,32 @@
+.container{
+    width: 900px;
+    height: 500px;
+    /*border: 2px solid;*/
+    /*border: 1px solid blue;*/
+    display: inline-block;
+    margin: 0px 10px;
+    font-family: "Karma", serif;
+    
+}
+.item{
+    width: 200px;
+    height: 300px;
+    /*border: 1px solid;*/
+    display: inline-block;
+    margin: 0px 8px;
+    vertical-align: top;
+}
+img{
+    width: 100%;
+}
+h3{
+    font-weight: 400px;
+    font-size: 15px;
+    padding: 0px 10px;
+    text-align: center;
+}
+p{
+    padding: 0px 20px;
+    text-align: center;
+    
+}

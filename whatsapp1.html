@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <style>
+        .container{
+            width: 350px;
+            height: 500px;
+            border: 1px solid;
+            border-radius: 20px;
+            margin: 50px;
+        }
+        .header {
+            width: 348px;
+            height: 50px;
+            border: 1px solid;
+            border-top-left-radius:20px; 
+            border-top-right-radius: 20px;
+            background-color: rgba(0, 128, 0, 0.822);
+            position: relative;
+        }
+        .header img{
+            width: 48px ;
+            height: 48px;
+            border-radius: 30px;
+            position: relative;
+            left: 40px;
+            top: 1px;
+        }
+        .arrow {
+            width: 40px;
+            height: 30px;
+            background-image: url(4470662_app_back_mobile_ui_ux_icon\ \(1\).png);
+            position:absolute;
+            top: 10px;
+        }
+        .name{
+            position: absolute;
+            top: 0%;
+            left: 100px;
+            color: white;
+        }
+        .video{
+            width: 33px;
+            height: 33px;
+            background-image: url(./2559773_camera_media_video_icon.png);
+            position: absolute;
+            top: 13px;
+            left: 235px;
+        }
+        .call{
+            width: 33px;
+            height: 33px;
+            background-image: url(./3669395_call_ic_icon.png);
+            position: absolute;
+            top: 13px;
+            left: 280px;
+        }
+        .dots{
+            width: 33px;
+            height: 35px;
+            background-image: url(./9080886_dots_vertical_icon.png);
+            position:absolute;
+            top: 13px;
+            left: 310px;
+        }
+        .main{
+            width: 350px;
+            height: 400px;
+            border: 1px white;
+            background-image: url(./Pawan\ kalyan\ image.jpg);
+            overflow-y: scroll;
+            scrollbar-width: none;
+            position: relative;
+        }
+        .date{
+            position: sticky;
+            text-align: center;
+            z-index: 1;
+            border: 1px solid;
+            width: 80px;
+            border-radius: 5px;
+            background-color:rgba(0, 0, 0, 0.733);
+            color:rgba(255, 255, 255, 0.664);
+            left: 120px;
+            top: 10px;
+        }
+        .b{
+            width:120px;
+            height:20px;
+            border: 1px solid;
+            border-radius: 15px;
+            position:relative;
+            left: 220px;
+            background-color: rgba(71, 255, 47, 0.61);
+
+        }
+        .d{ width:200px;
+            height:20px;
+            border: 1px solid;
+            border-radius: 15px;
+            position:relative;
+            left: 140px;
+            background-color: rgba(71, 255, 47, 0.61);
+
+        }
+        .e{ width:fit-content;
+            height:40px;
+            border: 1px solid;
+            border-radius: 15px;
+            position:relative;
+            left:150px;
+            background-color: rgba(71, 255, 47, 0.61);
+
+        }
+        .f{ width:fit-content;
+            height:20px;
+            border: 1px solid;
+            border-radius: 15px;
+            position:relative;
+            left:300px;
+            background-color: rgba(71, 255, 47, 0.61);
+
+        }
+        .g{ width:fit-content;
+            height:40px;
+            border: 1px solid;
+            border-radius: 15px;
+            position:relative;
+            left:170px;
+            background-color: rgba(71, 255, 47, 0.61);
+
+        }
+        .h{ width:fit-content;
+            height:55px;
+            border: 1px solid;
+            border-radius: 15px;
+            position:relative;
+            left:130px;
+            background-color: rgba(71, 255, 47, 0.61);
+
+        }
+        .i{ width:fit-content;
+            height:65px;
+            border: 1px solid;
+            border-radius: 15px;
+            position:relative;
+            left:110px;
+            background-color: rgba(71, 255, 47, 0.61);
+
+        }
+        .j{ width:fit-content;
+            height:25px;
+            border: 1px solid;
+            border-radius: 15px;
+            position:relative;
+            left:70px;
+            background-color: rgba(71, 255, 47, 0.61);
+
+        }
+        .c{
+            width: fit-content;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 15px;
+            background-color: rgba(102, 51, 153, 0.568);
+            position: sticky;
+        }
+        .footer{
+            width: 350px;
+            height: 46px;
+            border: 1px solid;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px; 
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.651);
+        }
+        .emoji{
+            width: 33px;
+            height: 33px;
+            background-image: url(./8674860_ic_fluent_emoji_smile_slight_icon.png);
+            position:absolute;
+            left: 10px;
+            bottom: 4px;
+        }
+        .a input{
+            width: 150px;
+            height: 30px;
+            border: 1px solid;
+            position: absolute;
+            left: 50px;
+            top: 5px;
+        }
+        .link{
+            width: 20px;
+            height: 20px;
+            background-image: url(./8665779_link_connection_icon.png);
+            position:absolute;
+            left: 230px;
+            bottom: 11px;
+        }
+        .money{
+            width: 20px;
+            height: 20px;
+            background-image: url(./8665454_indian_rupee_sign_icon.png);
+            position:absolute;
+            left: 260px;
+            bottom: 11px;
+        }
+        .camera{
+            width: 20px;
+            height: 20px;
+            background-image: url(./115759_camera_icon.png);
+            position:absolute;
+            left: 290px;
+            bottom: 11px;
+        }
+        .mic{
+            width: 20px;
+            height: 20px;
+            background-image: url(./2205213_mic_microphone_record_speak_icon\ \(1\).png);
+            position:absolute;
+            left: 320px;
+            bottom: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src= "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cfa343203159403.6692466e24eb9.jpg"alt="">
+            <div class="arrow"></div>
+            <div class="name"><h4>PSPK Annaya</h4></div>
+            <div class="video"></div>
+            <div class="call"></div>
+            <div class="dots"></div>
+        </div>
+        <div class="main">
+            <div class="date">August 1</div>
+            <span><p class="b">Hello Thammudu</p></span>
+            <span><p class="c">Annaya nvu na number ki replay <br> esthavu ani ninu kalalo kuda anukoladuu</p></span>
+            <span><p class="d">ok Thammudu..How are you?</p></span>
+            <span><p class="c">Annaya..Iam doing good.. <br> Nvu ala unnvu Annaya</p></span>
+            <span><p class="e">Am chppanu ra Duputy CM..<br> Kada so koncham busy</p></span>
+            <span><p class="c">avuna Annaya...</p></span>
+            <span><p class="f">avunu</p></span>
+            <div class="date">August 2</div>
+            <span><p class="c">Annaya E five yers lo nvu <br> mana Andhra Pradesh Develop chyaliii...</p></span>
+            <span><p class="g">Adi na baadyatha..so ninu <br> thappakunda chetha..</p></span>
+            <span><p class="c">nvu Chethavu Annaya..nve ma nammakom</p></span>
+            <span><p class="h">past lo unna CM Jagn la mana <br> prabuthuvam undadu..antha <br> maruthundii..nvu chuthavu kada</p></span>
+            <span><p class="c">avunu Annaya..ade naku kavali</p></span>
+            <div class="date">August 3</div>
+            <span><p class="i">ni lanti uvathaku jobs and pedda <br> pedda companys thisukoni vastha... <br> mi uvathaku ninu untaaaa,,</p></span>
+            <span><p class="c">thank you Annaya E mata <br> chalu.. Love you Annya❤️</p></span>
+            <span><p class="j">😊..manchinga chadukoo..distact avvaku</p></span>
+            <span><p class="c">ok Annaya... thank you😊</p></span>
+            
+        </div>
+        <div class="footer">
+            <div class="emoji"></div>
+            <div class="a">
+            <input type="text" placeholder="Message">
+            </div>
+            <div class="link"></div>
+            <div class="money"></div>
+            <div class="camera"></div>
+            <div class="mic"></div>
+        </div>
+    </div>
+</body>
+</html>
